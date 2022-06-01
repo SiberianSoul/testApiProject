@@ -1,0 +1,513 @@
+<html><head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width">
+        <base href="">
+
+<!--	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">-->
+<!--        --><!--        -->	<!--        -->
+    <link rel="stylesheet" href="/core/css/bootstrap.css">
+        <link rel="stylesheet" href="/core/css/main.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+    <link rel="stylesheet" href="/core/css/media.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+
+	<link rel="stylesheet" href="/core/css/font-awesome-4.1.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/core/css/fixes.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+    <link rel="stylesheet" href="/core/css/default.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+    <link rel="stylesheet" href="/core/css/back.css?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a">
+
+    <script src="/core/js/jquery.js"></script>
+    <script src="/core/js/jquery.ui.1.11.2.js"></script>
+	<script src="/core/js/jquery.mobile.custom.min.js"></script>
+	<script src="/core/css/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/core/js/default.js?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a"></script>
+	<script src="/core/js/back.js?v=1775bf1b12e46f4e5c32353dadf2f2bd0498927a"></script>
+        <meta name="robots" content="noindex, nofollow">
+
+	
+	<link rel="stylesheet" type="text/css" href="/assets/871ee471/skin-lion/ui.fancytree.min.css">
+<link rel="stylesheet" type="text/css" href="/assets/70c17bdd/toastr.css">
+<script type="text/javascript" src="/assets/871ee471/jquery.fancytree-all.min.js"></script>
+<script type="text/javascript" src="/assets/70c17bdd/toastr.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+;(function($){var ieVer=navigator.userAgent.match(/MSIE (\d+\.\d+);/);ieVer=ieVer&&ieVer[1]?new Number(ieVer):null;var cont=ieVer&&ieVer<7.1?document.createElement("div"):null,excludePattern=null,includePattern=null,mergeIfXhr=0,resMap2Request=function(url){if (!url.match(/\?/))url += "?";return url + "&nlsc_map=" + $.nlsc.smap();};;if(!$.nlsc)$.nlsc={resMap:{}};$.nlsc.normUrl=function(url){if(!url)return null;if(cont){cont.innerHTML='<a href="'+url+'"></a>';url=cont.firstChild.href}if(excludePattern&& url.match(excludePattern))return null;if(includePattern&&!url.match(includePattern))return null;return url.replace(/\?*&*(_=\d+)?&*$/g,"")};$.nlsc.h=function(s){var h=0,i;for(i=0;i<s.length;i++)h=(h<<5)-h+s.charCodeAt(i)&1073741823;return""+h};$.nlsc.fetchMap=function(){for(var url,i=0,res=$(document).find("script[src]");i<res.length;i++)if(url=this.normUrl(res[i].src?res[i].src:res[i].href))this.resMap[url]={h:$.nlsc.h(url),d:1}};$.nlsc.smap=function(){var s="[";for(var url in this.resMap)s+='"'+this.resMap[url].h+ '",';return s.replace(/,$/,"")+"]"};var c={global:true,beforeSend:function(xhr,opt){if(!$.nlsc.fetched){$.nlsc.fetched=1;$.nlsc.fetchMap()}if(opt.dataType!="script"){if(mergeIfXhr)opt.url=resMap2Request(opt.url);return true}var url=$.nlsc.normUrl(opt.url);if(!url)return true;if(opt.converters&&opt.converters["text script"]){var saveConv=opt.converters["text script"];opt.converters["text script"]=function(){if(!$.nlsc.resMap[url].d){$.nlsc.resMap[url].d=1;saveConv.apply(window,arguments)}}}var r=$.nlsc.resMap[url]; if(r){if(r.d)return false}else $.nlsc.resMap[url]={h:$.nlsc.h(url),d:0};return true}};if(ieVer)c.dataFilter=function(data,type){if(type&&(type!="html"&&type!="text"))return data;return data.replace(/(<script[^>]+)defer(=[^\s>]*)?/ig,"$1")};$.ajaxSetup(c)})(jQuery);
+/*]]>*/
+</script>
+<title>Dashboard - Casino</title>
+        
+</head>
+<body class="body__en">
+	<section class="top-header" id="header">
+	<header class="clearfix"><a class="toggle-min" href=""></a>
+
+		<a href="" class="toggle-min"><i class="fa fa-bars"></i></a>
+
+		<div class="logo">
+			<a href="/admin/login"><img id="header-logo" src="/front/img/casino/logo.png" alt="Casino"></a>		</div>
+
+<!--		<a href="" class="toggle-min"><i class="fa fa-bars"></i></a>-->
+		<div class="menu-button toggle-min">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</div>
+
+		<div class="top-nav">
+			<ul class="nav-left list-unstyled">
+
+				<li class="dropdown">
+					
+					
+				</li>
+				
+				<li class="dropdown">
+					
+					
+				</li>
+
+                <li class="dropdown">
+                    
+                    
+                </li>
+
+                				<li id="deposit" class="dropdown hidden">
+                                        <a href="/payment/paymentSystemTransaction/depositRequests"><i class="fa fa-fw fa-money"></i> <span class="badge badge-warning">0</span></a>				</li>
+
+                				<li id="withdraw" class="dropdown hidden">
+                                        <a href="/payment/paymentSystemTransaction/withdrawalRequests"><i class="fa fa-usd"></i> <span class="badge badge-warning">0</span></a>				</li>
+			</ul>
+
+			
+			<ul class="nav-right pull-right list-unstyled">
+				<li class="dropdown langs text-normal">
+					<a type="button" id="clock" role="button" class="dropdown-toggle" data-toggle="dropdown" href="#">15:17</a>
+
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+    	<li>
+            <a tabindex="-1" href="#" id="yt0">(UTC -11) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt1">(UTC -10) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt2">(UTC -9) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt3">(UTC -8) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt4">(UTC -7) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt5">(UTC -6) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt6">(UTC -5) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt7">(UTC -4) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt8">(UTC -3) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt9">(UTC -2) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt10">(UTC -1) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt11">(UTC +0) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt12">(UTC +1)  <i class="fa fa-check"></i></a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt13">(UTC +2) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt14">(UTC +3) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt15">(UTC +4) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt16">(UTC +5) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt17">(UTC +6) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt18">(UTC +7) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt19">(UTC +8) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt20">(UTC +9) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt21">(UTC +10) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt22">(UTC +11) </a>	</li>
+    	<li>
+            <a tabindex="-1" href="#" id="yt23">(UTC +12) </a>	</li>
+    </ul>
+
+				</li>
+				<li class="dropdown langs text-normal">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="/en/user/player/"><i class="fa fa-flag"></i> English</a>
+
+<ul class="dropdown-menu with-arrow pull-right list-langs">
+	
+			<li>
+                                <a class="" href="/ru/user/player/">Русский</a>                        </li>
+
+	</ul>
+
+				</li>
+				<li class="dropdown text-normal nav-profile">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="white-space: nowrap;">
+						<i class="fa fa-user"></i>
+						<span>
+							admin1						</span>
+
+					</a>
+					<ul class="dropdown-menu with-arrow pull-right">
+						<li>
+							<a href="/operator/changeYourPassword"><i class="fa fa-unlock"></i> Change password</a>						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="/user/logout"><i class="fa fa-sign-out"></i> Logout</a>						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+</section>
+
+<script>
+	$(function(){
+		setInterval(function() {
+			newRequests();
+		}, 1000*20);
+
+		newRequests();
+	});
+    
+    function newRequests() {
+        time = localStorage.getItem('time') || new Date().getTime() / 1000 - 20;
+        
+        $.ajax({
+            url:'/payment/paymentSystemTransaction/countPendingRequest',
+            data: {time:time},
+            dataType: 'JSON',
+            success: function(data) {
+
+                localStorage.setItem('time', new Date().getTime() / 1000);
+                
+                deposit = $('#deposit');
+                withdraw = $('#withdraw');
+
+                if (data.new > 0 && true) {
+					elAudioPlayer = $("#audio-player")[0];
+					elAudioPlayer.play();
+					setTimeout(function(){
+						elAudioPlayer.pause();
+						elAudioPlayer.currentTime = 0;
+					}, 2000);
+                }
+
+                if (data.deposit > 0) {
+                    $('.badge', deposit).text(data.deposit);
+                    deposit.removeClass('hidden');
+                } else {
+                    deposit.addClass('hidden');
+                }
+
+                if (data.withdraw > 0) {
+                    $('.badge', withdraw).text(data.withdraw);
+                    $('.dash-withdraw').text(data.withdraw);
+                    withdraw.removeClass('hidden');
+                } else {
+                    withdraw.addClass('hidden');
+                }
+            },
+        });
+    }
+</script>
+
+<audio loop="" id="audio-player" name="audio-player">
+    <source src="/core/sound/ding-ding-dong.mp3" type="audio/mpeg">
+    <source src="/core/sound/ding-ding-dong.ogg" type="audio/ogg">
+    <source src="/core/sound/ding-ding-dong.wav" type="audio/wav">
+</audio>
+
+	
+<aside id="nav-container">
+    <div id="nav-wrapper">
+        <div class="slimScrollDiv" style="position: relative; overflow: auto; width: auto; height: 100%;">
+            <ul class="main-side-menu" id="nav">
+<li><a style="white-space: nowrap;" href="/configurator/dashboard/index"><i class="fa fa-dashboard"><span class="icon-bg bg-primary"></span></i> <span>Dashboard</span></a></li>
+<li><a data-target="#s-menu-halls" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-file-text-o"><span class="icon-bg bg-primary"></span></i> <span>Agent Info</span></a>
+<ul class="collapse" id="s-menu-halls">
+<li><a href="/structure/default/details?nodeId=1"><i class="fa fa-caret-right"></i>General</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-main" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-cubes"><span class="icon-bg bg-orange"></span></i> <span>Settings</span></a>
+<ul class="collapse" id="s-menu-main">
+<li><a href="/configurator/theme/index"><i class="fa fa-caret-right"></i>General</a></li>
+<li><a href="/settings/default/index"><i class="fa fa-caret-right"></i>Settings</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-games" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-gamepad"><span class="icon-bg bg-info"></span></i> <span>Games</span></a>
+<ul class="collapse" id="s-menu-games">
+<li data-node-required="1"><a href="/games/gameContractLimit/index"><i class="fa fa-caret-right"></i>Game contract limits</a></li>
+<li data-node-required="1"><a href="/structure/default/gameLimitMovements"><i class="fa fa-caret-right"></i>Game contract limit movements</a></li>
+<li data-node-required="1"><a href="/games/operator/gameSessions"><i class="fa fa-caret-right"></i>Game sessions</a></li>
+<li data-node-required="1"><a href="/games/operator/games"><i class="fa fa-caret-right"></i>List of games</a></li>
+<li data-node-required="1"><a href="/gameGroupAdmin/admin"><i class="fa fa-caret-right"></i>Game groups</a></li>
+<li data-node-required="1"><a href="/structure/nodeGameProvider/admin"><i class="fa fa-caret-right"></i>Game providers</a></li>
+<li><a href="/games/tables/admin">Admin game tables list</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-money" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-money"><span class="icon-bg bg-orange"></span></i> <span>Money</span></a>
+<ul class="collapse" id="s-menu-money">
+<li><a href="/structure/nodeCurrency/admin"><i class="fa fa-caret-right"></i>Currency</a></li>
+<li><a href="/structure/nodeCurrency/dailyPaymentTotals"><i class="fa fa-caret-right"></i>Automatic payouts limits</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransaction/depositRequests"><i class="fa fa-caret-right"></i>Deposit requests</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransaction/withdrawalRequests"><i class="fa fa-caret-right"></i>Withdrawal requests</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransaction/index"><i class="fa fa-caret-right"></i>Payment transactions</a></li>
+<li data-node-required="1"><a href="/payment/paymentSystemTransactionUnconfirmed/admin"><i class="fa fa-caret-right"></i>Unconfirmed transactions</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-content" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-file-word-o"><span class="icon-bg bg-success"></span></i> <span>Content</span></a>
+<ul class="collapse" id="s-menu-content">
+<li><a href="/InfoPages/admin/tree?place=playerTopMenu"><i class="fa fa-caret-right"></i>Player top menu</a></li>
+<li><a href="/InfoPages/admin/tree?place=topMenu"><i class="fa fa-caret-right"></i>Top menu</a></li>
+<li><a href="/InfoPages/admin/tree?place=bottomMenu"><i class="fa fa-caret-right"></i>Bottom menu</a></li>
+<li><a href="/InfoPages/admin/tree?place=articles"><i class="fa fa-caret-right"></i>Articles</a></li>
+<li><a href="/news/admin/admin"><i class="fa fa-caret-right"></i>News</a></li>
+<li><a href="/slider/sliderPlace/admin"><i class="fa fa-caret-right"></i>Sliders</a></li>
+<li><a href="/InfoPages/tabs/admin"><i class="fa fa-caret-right"></i>Tabs</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-seo" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-globe"><span class="icon-bg bg-primary"></span></i> <span>SEO</span></a>
+<ul class="collapse" id="s-menu-seo">
+<li><a href="/seo/seoGlobalTag/admin"><i class="fa fa-caret-right"></i>SEO global tags</a></li>
+<li><a href="/seo/seoTagByUrl/admin"><i class="fa fa-caret-right"></i>SEO tags by URL</a></li>
+<li><a href="/seo/robots/index"><i class="fa fa-caret-right"></i> robots.txt</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-users" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-user"><span class="icon-bg bg-success"></span></i> <span>Users</span></a>
+<ul class="collapse" id="s-menu-users">
+<li data-node-required="1"><a href="/user/player/admin"><i class="fa fa-caret-right"></i>Players</a></li>
+<li data-node-required="1"><a href="/user/report/playerRegistrations"><i class="fa fa-caret-right"></i>Players registrations</a></li>
+<li data-node-required="1"><a href="/user/admin/admin"><i class="fa fa-caret-right"></i>Users</a></li>
+<li><a href="/user/device/admin"><i class="fa fa-caret-right"></i>Devices</a></li>
+<li><a href="/user/admin/blockedUsers"><i class="fa fa-caret-right"></i>Blocked players</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-operator-bonus" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-gift"><span class="icon-bg bg-twitter"></span></i> <span>Bonuses</span></a>
+<ul class="collapse" id="s-menu-operator-bonus">
+<li><a href="/bonus/operator/admin"><i class="fa fa-caret-right"></i>List of bonuses</a></li>
+<li data-node-required="1"><a href="/bonus/operator/playerBonuses"><i class="fa fa-caret-right"></i>Bonus transactions</a></li>
+<li><a href="/bonus/operator/gameWageringByApi"><i class="fa fa-caret-right"></i>Wagering by provider</a></li>
+<li><a href="/bonus/operator/gameWagering"><i class="fa fa-caret-right"></i>Wagering by game type</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-jackpots" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-dot-circle-o"><span class="icon-bg bg-primary"></span></i><span>Jackpots</span></a>
+<ul id="module-jackpots" class="collapse">
+<li><a href="/jackpots/jackpots/admin"><i class="fa fa-caret-right"></i>Jackpots</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-messaging" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-comment-o"><span class="icon-bg bg-primary"></span></i><span>Messaging</span></a>
+<ul id="module-messaging" class="collapse">
+<li><a href="/messaging/template/admin"><i class="fa fa-caret-right"></i>Templates</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-faq" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-question"><span class="icon-bg bg-success"></span></i><span>FAQ</span></a>
+<ul class="collapse" id="module-faq">
+<li><a href="/faq/category/admin"><i class="fa fa-caret-right"></i>Categories</a></li>
+<li><a href="/faq/item/admin"><i class="fa fa-caret-right"></i>Questions</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#module-shop" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-shopping-cart"><span class="icon-bg bg-info"></span></i><span>Shop</span></a>
+<ul class="collapse" id="module-shop">
+<li><a href="/shop/product/admin"><i class="fa fa-caret-right"></i>Products</a></li>
+<li><a href="/shop/order/admin"><i class="fa fa-caret-right"></i>Orders</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-logs" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-list-ul"><span class="icon-bg bg-orange"></span></i> <span>Logs</span></a>
+<ul class="collapse" id="s-menu-logs">
+<li data-node-required="1"><a href="/structure/default/limitMovements"><i class="fa fa-caret-right"></i>Deposit limit movements</a></li>
+<li data-node-required="1"><a href="/user/cashier/cashierTransactions"><i class="fa fa-caret-right"></i>Cashier transactions</a></li>
+<li data-node-required="1"><a href="/user/cashier/shiftLog"><i class="fa fa-caret-right"></i>Shift work</a></li>
+<li data-node-required="1"><a href="/userMessage/ticketAdmin/admin"><i class="fa fa-caret-right"></i>Tickets</a></li>
+<li data-node-required="1"><a href="/user/userVisitLog/admin"><i class="fa fa-caret-right"></i>Visit log</a></li>
+<li data-node-required="1"><a href="/statistics/log/admin"><i class="fa fa-caret-right"></i>Losses log</a></li>
+<li><a href="/statistics/jackpotLog/admin"><i class="fa fa-caret-right"></i>Jackpot log</a></li>
+<li><a href="/games/notGivenWins/admin"><i class="fa fa-caret-right"></i>Not given wins log</a></li>
+<li><a href="/bonus/wagerResetLog/admin"><i class="fa fa-caret-right"></i>Wager reset log</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+<li><a data-target="#s-menu-reports" data-toggle="collapse" data-parent=".main-side-menu" href="#"><i class="fa fa-bar-chart-o"><span class="icon-bg bg-orange"></span></i> <span>Reports</span></a>
+<ul class="collapse" id="s-menu-reports">
+<li data-node-required="1"><a href="/statistics/report/cashflow"><i class="fa fa-caret-right"></i>Cashflow</a></li>
+<li data-node-required="1"><a href="/statistics/report/games"><i class="fa fa-caret-right"></i>Provider revenue</a></li>
+<li data-node-required="1"><a href="/statistics/report/creditConsumption"><i class="fa fa-caret-right"></i>Credit consumption</a></li>
+<li data-node-required="1"><a href="/statistics/report/creditConsumptionAdvanced"><i class="fa fa-caret-right"></i>Credit consumption (advanced)</a></li>
+<li data-node-required="1"><a href="/statistics/report/periodics"><i class="fa fa-caret-right"></i>Periodics</a></li>
+<li data-node-required="1"><a href="/statistics/report/yieldByPlayer"><i class="fa fa-caret-right"></i>Yield by player</a></li>
+<li data-node-required="1"><a href="/statistics/report/limitMovements"><i class="fa fa-caret-right"></i>Deposit limits</a></li>
+<li data-node-required="1"><a href="/statistics/report/bonus"><i class="fa fa-caret-right"></i>Bonus report</a></li>
+</ul><i class="fa fa-caret-right icon-has-ul"></i>
+</li>
+</ul>                    </div>
+
+    </div>
+</aside>
+	
+	<section id="content">
+		
+						
+		
+							<ul class="breadcrumb" id="node-breadcrumbs">
+					<li class="active fancytree-breadcrumbs" data-node-id="1"><span class="fancytree-ico-cf"><span class="fancytree-icon"></span></span>Root</li>				</ul>
+
+				<div id="node-tree-container" style="display: none">
+					<input class="form-control" id="tree-search" placeholder="Search by name or #ID. Press ESC to close." type="text">
+					<div id="node-tree">
+						<ul class="ui-fancytree-source ui-helper-hidden"><li id="id1" data-node-type="0" data-node-status="1" class="folder" data-node-binded="1" data-jstree="{&quot;icon&quot;:&quot;fa fa-globe&quot;}"><a href="/structure/default/details?nodeId=1">[#1] Root</a><ul><li id="id2" data-node-type="1" data-node-status="1" class="" data-node-binded="0" data-jstree="{&quot;icon&quot;:&quot;fa fa-file-o&quot;}"><a href="/structure/default/details?nodeId=2">[#2] <b>Hall</b> <i class="fa fa-check"></i></a></li></ul></li></ul>					<ul class="ui-fancytree fancytree-container" tabindex="0"><li class="fancytree-lastsib"><span class="fancytree-node fancytree-folder fancytree-has-children fancytree-lastsib fancytree-exp-cl fancytree-ico-cf"><span class="fancytree-expander"></span><span class="fancytree-icon"></span><span class="fancytree-title">[#1] Root</span></span></li></ul></div>
+				</div>
+			
+		
+		
+		<div class="page">
+			
+<div class="panel panel-danger text-center">
+    <div class="panel-body">
+        <h1 class="text-danger">Error 404</h1>
+        <p class="lead">
+            The system is unable to find the requested action "index".        </p>
+                    <div class="text-left">
+                <pre class="text-left">                    <h5>/var/www/d6.dev.devcaz.com/www/project-test-task/platform/app__core/src/web/core/framework/web/CController.php:484 CHttpException</h5>#0 /var/www/d6.dev.devcaz.com/www/project-test-task/platform/app__core/src/web/core/framework/web/CController.php(271): CController-&gt;missingAction('')
+#1 /var/www/d6.dev.devcaz.com/www/project-test-task/platform/app__core/src/web/core/framework/web/CWebApplication.php(282): CController-&gt;run('')
+#2 /var/www/d6.dev.devcaz.com/www/project-test-task/platform/app__core/src/web/core/framework/web/CWebApplication.php(141): CWebApplication-&gt;runController('user/player')
+#3 /var/www/d6.dev.devcaz.com/www/project-test-task/platform/app__core/src/web/core/framework/base/CApplication.php(184): CWebApplication-&gt;processRequest()
+#4 /var/www/d6.dev.devcaz.com/www/project-test-task/platform/app__core/src/web/index.php(18): CApplication-&gt;run()
+#5 {main}                </pre>
+            </div>
+            </div>
+</div>
+		</div>
+	</section>
+
+	
+
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery(function($) {
+jQuery('body').on('click','#yt0',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-11','cache':false});return false;});
+jQuery('body').on('click','#yt1',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-10','cache':false});return false;});
+jQuery('body').on('click','#yt2',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-9','cache':false});return false;});
+jQuery('body').on('click','#yt3',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-8','cache':false});return false;});
+jQuery('body').on('click','#yt4',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-7','cache':false});return false;});
+jQuery('body').on('click','#yt5',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-6','cache':false});return false;});
+jQuery('body').on('click','#yt6',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-5','cache':false});return false;});
+jQuery('body').on('click','#yt7',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-4','cache':false});return false;});
+jQuery('body').on('click','#yt8',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-3','cache':false});return false;});
+jQuery('body').on('click','#yt9',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-2','cache':false});return false;});
+jQuery('body').on('click','#yt10',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=-1','cache':false});return false;});
+jQuery('body').on('click','#yt11',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B0','cache':false});return false;});
+jQuery('body').on('click','#yt12',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B1','cache':false});return false;});
+jQuery('body').on('click','#yt13',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B2','cache':false});return false;});
+jQuery('body').on('click','#yt14',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B3','cache':false});return false;});
+jQuery('body').on('click','#yt15',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B4','cache':false});return false;});
+jQuery('body').on('click','#yt16',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B5','cache':false});return false;});
+jQuery('body').on('click','#yt17',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B6','cache':false});return false;});
+jQuery('body').on('click','#yt18',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B7','cache':false});return false;});
+jQuery('body').on('click','#yt19',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B8','cache':false});return false;});
+jQuery('body').on('click','#yt20',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B9','cache':false});return false;});
+jQuery('body').on('click','#yt21',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B10','cache':false});return false;});
+jQuery('body').on('click','#yt22',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B11','cache':false});return false;});
+jQuery('body').on('click','#yt23',function(){jQuery.ajax({'success':function() {
+                        location.reload();
+                },'url':'/setTimezone?timezone=%2B12','cache':false});return false;});
+
+        $(function() {
+                var phptime = new Date(2022, 05, 29, 15, 17, 42);
+
+                var h = phptime.getHours();
+                var m = phptime.getMinutes();
+                var s = phptime.getSeconds();
+
+                startTime(h,m,s);
+        });
+
+        function startTime(h,m,s)
+        {       
+                var h = h;
+                var m = m;
+                var s = s;
+                if (s > 59) {                        
+                        s = s-60; 
+                        m += 1 ; 
+                }
+                if (m > 59) {
+                        m = m-60; 
+                        h += 1 ;
+                }
+                if (h == 24) {
+                        h = 0;
+                }
+
+                m = checkTime(m);
+
+                document.getElementById('clock').innerHTML=h+':'+m;
+
+                t=setTimeout(function() { startTime( h, parseInt(m), parseInt(s) + 5) },5000);
+        }
+
+        function checkTime(i)
+        {
+                if (i<10)
+                {
+                        i='0' + i;
+                }
+                return i;
+        }
+
+toastr.options={'positionClass':'toast-top-right','fadeOut':400,'timeOut':5000,'fadeIn':400};
+});
+/*]]>*/
+</script>
+
+
+</body></html>
